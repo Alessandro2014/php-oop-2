@@ -16,26 +16,21 @@
 
 <body>
     <main>
-         <!-- SEZIONE USER -->
-        <section>
-            <?php $user = new User('Biaggio', 'Rossi', 'b.rossi@email.it', 32); ?>
-            <h2><?=$user->getWelcome()?></h2>
-        </section>
-         <!-- SEZIONE USER PRIME -->
+        <!-- SEZIONE USER PRIME -->
         <section>
             <?php $prime = new Prime('Antonio', 'Verdi', 'a.verdi@email.it', 45, 20, '46372 3838 3939'); ?>
-            <h2><?=$prime->getWelcome()?></h2>
-            <p><?=$prime->getDiscount()?></p>
-            <p>Hai registrato la carta di credito n: <?=$prime->getCreditCard()?></p>
+            <h2><?= $prime->getWelcome() ?></h2>
+            <p><?= $prime->getDiscount() ?></p>
+            <p>Hai registrato la carta di credito n: <?= $prime->getCreditCard() ?></p>
 
 
         </section>
         <!-- SEZIONE USER OCCASIONALE -->
         <section>
             <?php $occasional = new Occasional('Fabio', 'Bianchi', 'f.bianchi@email.it', 32, 60, 'Standard'); ?>
-            <h2><?=$occasional->getWelcome()?></h2>
-            <p><?=$occasional->getExpedition()?></p>
-            <p><?=$occasional->getAmount()?></p>
+            <h2><?= $occasional->getWelcome() ?></h2>
+            <p><?= $occasional->getExpedition() ?></p>
+            <p><?= $occasional->getAmount() ?></p>
 
 
         </section>
